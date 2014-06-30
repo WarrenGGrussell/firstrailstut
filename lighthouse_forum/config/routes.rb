@@ -53,4 +53,10 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  LighthouseForum::Application.routes.draw do 
+    get 'posts', to: 'posts#index'
+    # [tons of helpful comments]
+  end
 end
+
+
